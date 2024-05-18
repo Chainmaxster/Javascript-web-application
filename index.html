@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anime Search</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for an anime...">
+            <button onclick="searchAnime()">Search</button>
+        </div>
+        <div id="animeList" class="anime-list"></div>
+        <div id="pagination" class="pagination"></div>
+        
+        <h2>Add to Favorites</h2>
+        <div class="favorites-container">
+            <input type="text" id="favoriteAnime" placeholder="Anime ID">
+            <button onclick="addFavorite()">Add</button>
+        </div>
+        <div id="favoriteList" class="favorite-list"></div>
+    </div>
+
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
